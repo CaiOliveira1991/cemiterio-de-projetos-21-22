@@ -1,0 +1,153 @@
+#Sobre{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#292929, #000000)
+}
+
+.img_about{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #8080808e;
+}
+
+.img_about .img1{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-self: start;
+}
+
+.img1 img{
+    width: 15rem;
+}
+
+.img2{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.img2 hr{
+    width: 50px;
+    height: 2px;
+    background-color: #ff0000;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.img2 img{
+    width: 15rem;
+}
+
+
+.about{
+    margin-left: 50px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.about hr{
+    margin-top: 50px;
+    width: 50px;
+    height: 2px;
+    background-color: #ff0000;
+    border: none;
+}
+
+.about h3{
+    width: 80%;
+    text-align: start;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.article{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: start;
+}
+
+.about1{
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s all ease-in-out;
+}
+
+.About2{
+    font-size: 15px;
+    color: #ffffff9c;
+    transition: 1s all ease-in-out;
+}
+
+.Ass{
+    margin-left: 60%;
+    width: 80px;
+    height: 80px;
+    transition: 1s all ease-in-out;
+}
+
+.Ass img{
+    width: auto;
+    transform: rotate(25deg);
+}
+
+@media screen and (max-width: 1000px){
+    #Sobre{
+        flex-direction: column;
+        height: auto;
+    }
+  
+    .img_about{
+        border-right: 0px solid #8080808e;
+    }
+   .Ass img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about{
+        height: auto;
+        width: 60%;
+    }
+    
+    .article{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .img2 {
+        display: none;
+    }
+    
+    .about h3{
+        margin-top: 20px;
+    }
+
+    .article{
+        margin-top: 50px;
+    }
+
+    .About2{
+       margin-top: 20px;
+    }
+
+
+}

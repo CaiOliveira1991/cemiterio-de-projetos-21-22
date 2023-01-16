@@ -1,0 +1,148 @@
+#Staff{
+    width: 100%;
+    height: 95vh;
+    background:linear-gradient(#000000, #252525);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#Staff h3{
+    font-size: 50px;
+}
+
+#Staff hr{
+    height: 2px;
+    width: 10%;
+    background-color: hwb(0 0% 0%);
+    border: none;
+}
+
+#Staff .div{
+    margin-top: 50px;
+    width: 90%;
+    background-color: #8080808e; 
+}
+
+.staff_container{
+    margin-bottom: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.card{
+    width: 25rem;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 20px;
+    overflow: hidden;
+    cursor:pointer;
+    transition: 1s all ease-in-out;
+}
+
+.card:nth-child(1){
+    background-image: url(../img/team-creative-1-370x480.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(2){
+    background-image: url(../img/tatuador-profissional-trabalha-em-estudio-de-tatuagemskin-master-trabalhando-em-dispositivo-de-maquina-de-tatuagem-profissional-no-salao-de-tatuagem_257488-4884.webp);
+    background-position:10%;
+    background-size: cover;
+}
+
+.card:nth-child(3){
+    background-image: url(../img/team-creative-3-370x480.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card_container{
+    position: relative;
+    bottom: -40px;
+    width: 100%;
+    height: 25%;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 600ms all ease-in-out;
+
+}
+
+.card_container .Name{
+    font-size: 30px;
+}
+
+.card_container .descrition_tattoo{
+    font-size: 20px;
+    color: #808080b4;
+}
+
+.card_container span{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container .Social{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: 400ms all ease-in-out;
+}
+
+.card_container .Social li a ion-icon{
+    font-size: 25px;
+    color: #ff0000;
+}
+
+
+.card:hover .card_container{
+    bottom: 0; 
+}
+
+.card:hover .card_container .Social{
+    opacity: 1;
+}
+
+@media screen and (max-width:1340px) {
+    #Staff{
+        height: 150vh;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #Staff{
+        height: 250vh!important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .card{
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width:299px) {
+    .card{
+        width: 15rem;
+    }
+}
+
+

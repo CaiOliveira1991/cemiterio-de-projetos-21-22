@@ -1,0 +1,79 @@
+#Testemunhas{
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Testemunhas h3{
+    margin-top: 200px;
+    font-size: 40px;
+    transition: 1s all ease-in-out;
+}
+
+.testemunhas_container{
+    width: 100%;
+    height: auto;
+    margin: 50px 0px 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.card_testemunhos{
+    width: 40%;
+    height: 800px;
+    transition: 1s all ease-in-out;
+}
+
+.card_testemunhos ion-icon{
+    font-size: 100px;
+    color: #ffffff2a;
+}
+
+.card_testemunhos p{
+    margin-top: 50px;
+    font-size: 20px;
+    color: #ffffffad;
+}
+
+.client {
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.client .img1{
+    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../img/images.jfif);
+    background-size: cover;
+}
+
+.client .img2{
+    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../img/f0036beb698e0839c61689a3ad598b46.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width:600px) {
+    #Testemunhas{
+        height: auto!important;
+    }
+    #Testemunhas h3{
+        font-size: 30px;
+    }
+}
