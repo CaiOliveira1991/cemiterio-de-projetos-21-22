@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Press+Start+2P&family=Trispace:wght@100;300;700;800&display=swap');
+
+$green: #00ff00 ;
+$pink: #FF0099 ;
+$blue: #00ffff ;
+$white: #ffffff ;
+$black: #000000 ;
+$clear: #ffffff9a ;
+$box-shadow: -5px 5px 0px #FF0099, 5px -5px 0px #00ffff ;
+$box-hover: 5px -5px 0px #FF0099 , -5px 5px 0px #00ffff;
+$tran: 500ms all ease-in-out ;
+
+* {
+	max-width: 100% ;
+	height: auto ;
+	margin: 0 ;
+	padding: 0 ;
+	box-sizing: border-box ;
+	text-decoration: none ;
+	list-style-type: none ;
+	font-family: 'Trispace', sans-serif ;
+	scroll-behavior: smooth ;
+	overflow-x: hidden ;
+}
+
+::-webkit-scrollbar {
+	display: none ;
+}
+
+.flex {
+	display: flex ;
+	justify-content: center ;
+	align-items: center ;
+}
+
+.start {
+	display: flex ;
+	justify-content: flex-start ;
+	align-items: center ;
+}
+
+.around {
+	display: flex ;
+	justify-content: space-around ;
+	align-items: center ;
+}
+
+.column {
+	flex-direction: column ;
+}
+
+.between {
+	display: flex ;
+	justify-content: space-between ;
+	align-items: center ;
+}

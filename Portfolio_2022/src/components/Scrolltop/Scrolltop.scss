@@ -1,0 +1,39 @@
+
+$green: #00ff00 ;
+$pink: #FF0099 ;
+$blue: #00ffff ;
+$white: #ffffff ;
+$black: #000000 ;
+$clear: #ffffff9a ;
+$box-shadow: -5px 5px 0px #FF0099, 5px -5px 0px #00ffff ;
+$box-hover: 5px -5px 0px #FF0099 , -5px 5px 0px #00ffff;
+$tran: 500ms all ease-in-out ;
+
+.scroll{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    left: 80%;
+    transition: 500ms all ease-in-out;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(81, 255, 0, 0.363);
+    z-index: 99;
+    a{
+        font-size: 1.5rem;
+        color: $white;
+        &:hover{
+        background-color: $clear;
+        }
+    }
+}
+
+
+@media screen and (max-width:500px){
+
+    .scroll{
+        left:10px;
+    }
+    
+}

@@ -1,0 +1,213 @@
+$green: #00ff00 ;
+$pink: #FF0099 ;
+$blue: #00ffff ;
+$white: #ffffff ;
+$black: #000000 ;
+$clear: #ffffff9a ;
+$box-shadow: -5px 5px 0px #FF0099, 5px -5px 0px #00ffff ;
+$box-hover: 5px -5px 0px #FF0099 , -5px 5px 0px #00ffff;
+$tran: 500ms all ease-in-out ;
+
+#About{
+    width: 100%;
+    height: 80vh;
+    color: $white;
+    background-image: url(../media/hq.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container_about{
+        width: 100%;
+        max-width: 1600px;
+        height: 100%;
+        .container_skills{
+            width: 50%;
+            height: 100%;
+            padding: 230px 100px;
+            overflow: hidden;
+            h2{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            .ensino{
+                width: 500px;
+                height: 100px;
+                ion-icon{
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 30px;
+                    font-size: 2rem;
+                    color: $pink;
+                }
+                h4{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    color: $clear;
+                }
+            }
+            .skill{
+                width: 100%;
+                height: 70vh;
+                font-size: 1.2rem;
+                color: $clear;
+                z-index: 5;
+                div{
+                    p{
+                        width: 100px;
+                        height: 45px;
+                        display: flex;
+                        text-transform: uppercase;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                    span{
+                        margin-left: 50px;
+                        font-size: 1.3rem;
+                        width: auto;
+                        height: 45px;
+                        color: $pink;
+                        ion-icon{
+                            width: 50px;
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+    h3{
+        position: absolute;
+        width: 100%;
+        margin-left: 60%;
+        margin-top: -400px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1rem;
+        color: $green;
+        z-index: 99;
+    }
+}
+
+
+.Caio_Jose{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    .caio{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        border: 2px solid $white;
+        box-shadow: $box-shadow;
+    }
+}
+
+.pingu{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    margin-top: -20vh;
+    font-size: 2rem;
+    transform: rotate(180deg);
+    z-index: 0;
+    color: $green;
+    animation: andar 2s infinite;
+}
+
+@keyframes andar {
+    0%,100%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+}
+
+@media screen and (max-width:1000px){
+    #About{
+        height: 150vh;
+        .container_about{
+            height :140vh;
+            flex-direction: column;
+            .container_skills{
+                width: 100%;
+                height: 110vh;
+            }
+            .ensino h4{
+                font-size: 1.2rem;
+            }
+        
+            .skill div span{
+                font-size: 1.2rem;
+          
+            }
+        
+            .skill div p{
+                font-size: 1rem;
+          
+            }
+        }
+        h3{
+        margin-top: -110vh;
+   
+    }
+    
+
+
+    .Caio_Jose{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pingu{
+        left: 0%;
+        margin-top: -50vh;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    #About{
+        height: 200vh;
+        .container_about{
+        height :150vh;
+        flex-direction: column;
+            .ensino{
+                width: 300px;
+                height: 100px;
+            }
+            
+        
+            .container_skills{
+                width: 100%;
+                padding: 0px 30px;
+                overflow: hidden;
+            }
+            
+        
+        
+            .skill div p{
+                font-size: 1rem;
+        
+            }
+        }
+        h3{
+            width: 100%;
+            margin-top: -160vh;
+            margin-left: -10%;
+        }
+    }
+
+
+
+    .Caio_Jose{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pingu{
+        left: 0%;
+        margin-top: -50vh;
+    }
+}
+}
